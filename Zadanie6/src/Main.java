@@ -14,29 +14,41 @@ public class Main {
 
         if (czyTrojkat(a, b, c)) {
             System.out.println("Da się zbudować trójkąt.");
-            System.out.println("Rodzaj trójkąta: "+rodzajTrojkata(a, b, c));
+            System.out.println("Rodzaj trójkąta: " + rodzajTrojkata(a, b, c));
         } else {
             System.out.println("Nie da się zbudować trójkąta.");
         }
     }
 
-    public static boolean czyTrojkat(int a, int b, int c){
+    public static boolean czyTrojkat(int a, int b, int c) {
         return a + b > c && b + c > a && a + c > b;
     }
 
     public static String rodzajTrojkata(int a, int b, int c) {
-        if (a == b || b == c || c == a) {
-            return "równoramienny";
-        }
-        else if(a == b && b == c){
+        if (a == b && b == c) {
             return "równoboczny";
-        }
-        ////TODO Funkcja czyProstokatny(a,b,c)
-        else if (Math.pow(a,2) + Math.pow(b, 2) == Math.pow(c, 2)){
+        } else if (a == b || b == c || c == a ) {
+            return "równoramienny";
+        } else if (czyProstokatny(a,b,c)) {
             return "prostokątny";
-        }
-        else {
-            return "zwykły?";
+        } else {
+            return "zwykły";
+
+
         }
     }
-}
+
+    public static boolean czyProstokatny(int a, int b, int c) {
+        boolean zestaw1 = Math.pow(a,2) + Math.pow(b,2)==Math.pow(c,2);
+        boolean zestaw2 = Math.pow(a,2) + Math.pow(c,2)==Math.pow(b,2);
+        boolean zestaw3 = Math.pow(c,2 )+ Math.pow(b,2)==Math.pow(a,2);
+
+        return zestaw1 || zestaw2 || zestaw3 ;
+
+
+
+
+            }
+
+        }
+

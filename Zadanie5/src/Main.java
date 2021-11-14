@@ -26,22 +26,22 @@ public class Main {
 
         System.out.println("UTWORY: ");
 
-        //TODO Poprawić nazwy
-        if(dlugoscUtworu1 >= dlugoscUtworu2)
+
+        if(dlugoscUtworu1 <= dlugoscUtworu2)
         {
-            System.out.println("utwor 1" + getCzas(minuty1, sekundy1));
-            System.out.println("utwor 2" + getCzas(minuty2, sekundy2));
+            System.out.println("1. " + tytul1 + " " + getCzas(minuty1, sekundy1));
+            System.out.println("2. " + tytul2 +" "+ getCzas(minuty2, sekundy2));
         }
         else
         {
-            System.out.println("utwor 2");
-            System.out.println("utwor 1");
+            System.out.println("1. " + tytul2 + " " + getCzas(minuty2, sekundy2));
+            System.out.println("2. " + tytul1 + " " + getCzas(minuty1, sekundy1));
         }
 
         int czasTrwania = dlugoscUtworu1 + dlugoscUtworu2;
         int czasTrwaniaMinuty = czasTrwania / 60;
         int czasTrwaniaSekundy = czasTrwania % 60;
-        System.out.println("Łączny czas trwania: " + getCzas(czasTrwaniaMinuty, czasTrwaniaSekundy));
+        System.out.println("LACZNY CZAS TRWANIA: " + getCzas(czasTrwaniaMinuty, czasTrwaniaSekundy));
         System.out.println("------------------------------------------------");
     }
 

@@ -15,6 +15,7 @@ public class Main {
         }
     }
     public static boolean czyRokJestPrzestepny(int rok) {
+
         return (rok % 4 == 0 && rok % 100 != 0) || rok % 400 == 0;
     }
 }
