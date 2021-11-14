@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/PIP3.iml" filepath="$PROJECT_DIR$/.idea/PIP3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Zadanie1/Zadanie1.iml" filepath="$PROJECT_DIR$/Zadanie1/Zadanie1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Zadanie2/Zadanie2.iml" filepath="$PROJECT_DIR$/Zadanie2/Zadanie2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Zadanie3/Zadanie3.iml" filepath="$PROJECT_DIR$/Zadanie3/Zadanie3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Zadanie4/Zadanie4.iml" filepath="$PROJECT_DIR$/Zadanie4/Zadanie4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Zadanie5/Zadanie5.iml" filepath="$PROJECT_DIR$/Zadanie5/Zadanie5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Zadanie6/Zadanie6.iml" filepath="$PROJECT_DIR$/Zadanie6/Zadanie6.iml" />
+    </modules>
+  </component>
+</project>
